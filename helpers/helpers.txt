@@ -1,0 +1,41 @@
+
+
+{
+      "commenterId" : "req.body.commenterId",
+      "commenterPseudo" : "req.body.commenterPseudo",
+      "text" : "req.body,text"
+      "timeStamp" : new Date().getTime()
+}
+
+{
+      "commenterId" : "6169ae80656d5e68d8f8b4c0",
+      "commenterPseudo" : "Brenda",
+      "text" : "Mon premier commentaire, cool"
+}
+
+{
+      "commenterId" : "6169af83656d5e68d8f8b4ca",
+      "commenterPseudo" : "Nicolas",
+      "text" : "Salut à tous je suis Nico"
+}
+
+
+// PROMESSE
+
+      //soit un tabeau Users et un tableau Data
+
+      const getUser = new Promise ( (resolve,reject) => {
+            if (User !== 'undefine'){
+                  resolve(Users)
+            }else{
+                  reject('Erreur utilisateur ')
+            }
+      })
+
+            //recuperation des etats
+
+      getUser.then( (users) => {
+                  console.log(users)
+            } ).catch(e){
+                  console.log(e)
+            }
